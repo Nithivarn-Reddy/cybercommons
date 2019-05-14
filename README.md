@@ -42,7 +42,6 @@ DEVELOPMENTAL AT THIS POINT! This is not an offical release. Please experiment a
 
 ## TODO
 
-1. SSL Creation - current config with preset SSL
-2. NGINX config 
-2. JWT PAY-LOAD
-3. Integration with Kubernetes
+1. NGINX config 
+1. JWT PAY-LOAD
+1. Integration with Kubernetes
