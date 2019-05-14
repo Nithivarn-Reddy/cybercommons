@@ -14,6 +14,7 @@ DEVELOPMENTAL AT THIS POINT! This is not an offical release. Please experiment a
 * Docker
 * Docker Compose
     * `pip install docker-compose`
+* OpenSSL
 
 ## Installation
 
