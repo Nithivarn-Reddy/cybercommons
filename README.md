@@ -21,7 +21,7 @@ DEVELOPMENTAL AT THIS POINT! This is not an offical release. Please experiment a
 
         $ git clone <git repo url>
         $ cd cybercommons/dc_config
-	$ ./gensslkeys
+        $ ./gensslkeys
         $ ./initializeCybercomDB
         $ cd ..
 
