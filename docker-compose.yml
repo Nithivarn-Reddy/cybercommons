@@ -25,12 +25,12 @@ services:
       - mongodata:/data/db
       - ./dc_config/ssl/backend:/ssl
   cybercom_rabbitmq:
-    image: rabbitmq:3.6
+    image: rabbitmq
     restart: unless-stopped
     env_file:
       - dc_config/cybercom_config.env
     volumes:
-      - ./dc_config/ssl/backend:/ssl
+      - ./dc_config/ssl:/ssl
     expose:
       - 5671
   cybercom_memcache:
@@ -54,7 +54,7 @@ services:
     devices:
       - /dev/fuse
     volumes:
-      - ./dc_config/ssl/backend:/ssl
+      - ./dc_config/ssl:/ssl
     env_file:
       - dc_config/cybercom_config.env
     depends_on:
@@ -67,7 +67,7 @@ services:
     env_file:
       - dc_config/cybercom_config.env
     volumes:
-      - ./dc_config/ssl/backend:/ssl
+      - ./dc_config/ssl:/ssl
     expose:
       - 8080
     ports:

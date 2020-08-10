@@ -14,14 +14,26 @@ DEVELOPMENTAL AT THIS POINT! This is not an offical release. Please experiment a
 * Docker
 * Docker Compose
     * `pip install docker-compose`
+<<<<<<< HEAD
 * GNU Make or equivalent
+=======
+* OpenSSL
+>>>>>>> test_ssl
 
 ## Installation
 
 1. Edit values within dc_config/cybercom_config.env
 2. Initialize database and generate internal SSL certs
 
+<<<<<<< HEAD
         $ make init
+=======
+        $ git clone <git repo url>
+        $ cd cybercommons/dc_config
+        $ ./gensslkeys
+        $ ./initializeCybercomDB
+        $ cd ..
+>>>>>>> test_ssl
 
 3. Build and Deploy
 
@@ -38,6 +50,12 @@ DEVELOPMENTAL AT THIS POINT! This is not an offical release. Please experiment a
 
 ## TODO
 
+<<<<<<< HEAD
 1. NGINX TLS config 
 2. JWT PAY-LOAD
 3. Integration with Kubernetes
+=======
+1. NGINX config 
+1. JWT PAY-LOAD
+1. Integration with Kubernetes
+>>>>>>> test_ssl

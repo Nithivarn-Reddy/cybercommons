@@ -1,9 +1,13 @@
 #!/bin/bash
 
 # This script is used to generate keys for the message broker and clients
-# Rerun genSSLKeys to apply changes
 
-rootpath=/ssl
+source cybercom_config.env
+export CA_EXPIRE
+export KEY_SECRET
+
+#rootpath=/ssl
+rootpath=$PWD/ssl
 testca=$rootpath/testca
 server=$rootpath/server
 client=$rootpath/client
